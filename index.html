@@ -1,187 +1,305 @@
+```html
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <link rel="stylesheet" href="css/style.css">
-    <title>my portfolio</title>
+
+    <title>My Portfolio</title>
 </head>
 
 <body>
+
+    <!-- Header -->
     <header>
         <div class="header-container">
+
             <div class="logo">
-                <img src="images/logo.png" alt="logo" width="100" height="100">
+                <img src="images/logo.png"
+                     alt="Samyat Rajthala logo"
+                     width="100"
+                     height="100">
             </div>
+
+            <!-- Navigation -->
             <div class="nav-bar">
-                <nav>
+                <nav aria-label="Main navigation">
                     <ul>
                         <li><a href="#">Home</a></li>
-                        <li><a href="#aboutme">about me</a></li>
-                        <li><a href="#myproject">my project</a></li>
-                        <li><a href="#myskills">my skills</a></li>
+                        <li><a href="#aboutme">About Me</a></li>
+                        <li><a href="#myproject">My Projects</a></li>
+                        <li><a href="#myskills">My Skills</a></li>
                         <li><a href="#education">Education</a></li>
+                        <li><a href="#contact">Contact</a></li>
                     </ul>
                 </nav>
             </div>
+
+            <!-- Search -->
             <div class="search-bar">
-                <form>
-                    <input type="text" placeholder="search">
-                    <button type="submit">search</button>
+                <form action="#" method="get">
+                    <label for="search" class="visually-hidden">Search</label>
+                    <input
+                        type="search"
+                        id="search"
+                        name="search"
+                        placeholder="Search">
+                    <button type="submit">Search</button>
+                </form>
             </div>
-            </form>
+
+        </div>
     </header>
-    </div>
+
+
+    <!-- Main Content -->
     <main>
+
+        <!-- About Me -->
         <section id="aboutme">
             <div class="about-container">
+
                 <div class="about-text">
-
-
                     <h2>About Me</h2>
-                    <p>
-                        My name is Samyat Rajthala. I am 19 years old. I am a student of model institute of management. I am currently pursuing my undergraduate degree in computer science. 
-                        I have a strong interest in web development and programming. I am passionate about learning new technologies and improving my skills in the field of computer science.
-                        My hobbies include riding bikes, and cars, playing video games, travelling, and exploring new places.
 
+                    <p>
+                        My name is Samyat Rajthala. I am 19 years old and
+                        a student at Model Institute of Management. I am
+                        currently pursuing my undergraduate degree in
+                        Computer Science.
+                    </p>
+
+                    <p>
+                        I have a strong interest in web development and
+                        programming. I am passionate about learning new
+                        technologies and improving my skills in the field
+                        of computer science.
+                    </p>
+
+                    <p>
+                        My hobbies include riding bikes and cars, playing
+                        video games, travelling, and exploring new places.
                     </p>
                 </div>
-                <img src="images/profile.jpeg" alt="profile">
+
+                <img src="images/profile.jpeg"
+                     alt="Portrait of Samyat Rajthala">
+
             </div>
         </section>
+
+
+        <!-- Projects -->
         <section id="myproject">
             <div class="project-container">
-                <h1> My Project</h1>
-                <article>
 
-                    <h2>ShopSmart Purchase Prediction</h2>
-        <p>
-            Built a preprocessing and decision-tree pipeline for 12,330 sessions.
-            Recorded 0.612 test F1 and 0.84 purchase recall; five-fold GridSearchCV achieved 0.641 mean
-            crossvalidation F1.
-            <a href="https://github.com" target="_blank">view project</a>
-        </p>
-    </article>
-    <article>
-        <h2>SmartCart Customer Segmentation</h2>
-        <p>
-            Prepared 2,240 customer records, engineered spending and tenure
-            features, and applied scaling and PCA. Compared K-means and agglomerative clustering and profiled
-            four customer segments.
-            <a href="https://github.com" target="_blank">view project</a>
-        </p>
-    </article>
-    <article>
-        <h2>NovaGen Classification</h2>
-        <p>
-            Compared five classifiers using a stratified 80/20 split. Random Forest
-            recorded 95.9% recall and 93.8% accuracy on 1,910 test records, versus 82.8% recall for logistic
-            regression.
-        </p>
-        <a href="https://github.com" target="_blank">view project</a>
-    </article>
-    <article>
-        <h2>Creditwise Loan Approval</h2>
-        <p>
-            Explored 1,000 loan records, encoded categories, scaled features, and
-            engineered credit-score and debt-to-income features. Compared logistic regression, KNN, and Gaussian
-            Naive Bayes
-        </p>
-        <a href="https://github.com" target="_blank">view project</a>
+                <h1>My Projects</h1>
+
+                <article>
+                   <h2>House Price Prediction</h2>
+
+<p>
+    Developed a regression model to predict house prices using 
+    location, area, number of rooms, and property features. 
+    Compared Linear Regression and Random Forest models and 
+    achieved an R² score of 0.89 on the test dataset.
+</p>
+
+                    <a href="https://github.com"
+                       target="_blank"
+                       rel="noopener noreferrer">
+                        View Project
+                    </a>
                 </article>
+
+
+                <article>
+                   <h2>Movie Recommendation System</h2
+                    <p>
+                        Developed a recommendation system using movie ratings, genres, 
+    and user preferences. Implemented cosine similarity to identify 
+    similar movies and generated personalized recommendations for 
+    users based on their viewing history.
+</p>
+
+                    <a href="https://github.com"
+                       target="_blank"
+                       rel="noopener noreferrer">
+                        View Project
+                    </a>
+                </article>
+
+
+                <article>
+                   <h2>Sentiment Analysis System</h2>
+
+<p>
+    Built a natural language processing pipeline to classify customer 
+    reviews as positive or negative. Used text cleaning, TF-IDF 
+    vectorization, and Logistic Regression to achieve an 92% test 
+    accuracy on a review dataset.
+</p>
+
+                    <a href="https://github.com"
+                       target="_blank"
+                       rel="noopener noreferrer">
+                        View Project
+                    </a>
+                </article>
+
+
+                <article>
+                   <h2>Employee Attrition Prediction</h2>
+
+<p>
+    Developed a machine learning model to predict employee attrition 
+    using salary, job satisfaction, working hours, and experience. 
+    Compared Decision Tree and Random Forest classifiers and achieved 
+    an 86% test accuracy.
+</p>
+
+                    <a href="https://github.com"
+                       target="_blank"
+                       rel="noopener noreferrer">
+                        View Project
+                    </a>
+                </article>
+
             </div>
         </section>
+
+
+        <!-- Skills -->
         <section id="myskills">
             <div class="skills-container">
-                <h2> My Skills</h2>
+
+                <h2>My Skills</h2>
+
                 <dl>
-                    <dt>Programming Language</dt>
-                    <dd> java, python,c,c++</dd>
-                    <dt>Database</dt>
-                    <dd>mysql, mongodb</dd>
+                    <dt>Programming Languages</dt>
+                    <dd>Java, Python, C, C++</dd>
+
+                    <dt>Databases</dt>
+                    <dd>MySQL, MongoDB</dd>
+
                     <dt>Tools</dt>
-                    <dd>git, github, vscode</dd>
-                    <dt>Framework</dt>
+                    <dd>Git, GitHub, Visual Studio Code</dd>
+
+                    <dt>Frameworks</dt>
                     <dd>Django, Flask</dd>
                 </dl>
-        </section>
-        <section id="education">
-            <div class="education-container">
-                <h2>Education</h2>
-                <table border="1">
-                    <thead>
-                        <tr>
-                            <th>S.N</th>
-                            <th>level</th>
-                            <th>completion date</th>
-                            <th>institution</th>
-                            <th>grade</th>
-                            <th>Gpa</th>
-                        </tr>
 
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>1</td>
-                            <td>slc</td>
-                            <td>2022</td>
-                            <td>Modern BOarding HIgher Secondary school</td>
-                            <td>A</td>
-                            <td>3.7</td>
-                        </tr>
-                        <tr>
-                            <td>2</td>
-                            <td>+2</td>
-                            <td>2024</td>
-                            <td>hanakya college of Managemant</td>
-                            <td>A</td>
-                            <td>3.8</td>
-                        </tr>
-                        <tr>
-                            <td>3</td>
-                            <td>Under graduate</td>
-                            <td>2026</td>
-                            <td>model institute of college</td>
-                            <td>ongoing</td>
-                            <td>ongoing</td>
-                        </tr>
-                    </tbody>
-                </table>
             </div>
         </section>
+
+
+        <!-- Education -->
+        <section id="education">
+            <div class="education-container">
+
+                <h2>Education</h2>
+
+                <div class="table-container">
+                    <table>
+                        <caption>Educational Background</caption>
+
+                        <thead>
+                            <tr>
+                                <th scope="col">S.N.</th>
+                                <th scope="col">Level</th>
+                                <th scope="col">Completion Date</th>
+                                <th scope="col">Institution</th>
+                                <th scope="col">Grade</th>
+                                <th scope="col">GPA</th>
+                            </tr>
+                        </thead>
+
+                        <tbody>
+                            <tr>
+                                <td>1</td>
+                                <td>SLC</td>
+                                <td>2022</td>
+                                <td>Modern Boarding Higher Secondary School</td>
+                                <td>A</td>
+                                <td>3.7</td>
+                            </tr>
+
+                            <tr>
+                                <td>2</td>
+                                <td>+2</td>
+                                <td>2024</td>
+                                <td>Hanakya College of Management</td>
+                                <td>A</td>
+                                <td>3.8</td>
+                            </tr>
+
+                            <tr>
+                                <td>3</td>
+                                <td>Undergraduate</td>
+                                <td>2026</td>
+                                <td>Model Institute of Management</td>
+                                <td>Ongoing</td>
+                                <td>Ongoing</td>
+                            </tr>
+                        </tbody>
+
+                    </table>
+                </div>
+
+            </div>
+        </section>
+
     </main>
-    <section id="Contact">
+
+
+    <!-- Contact -->
+    <section id="contact">
         <div class="contact-container">
-        <h2>contact information</h2>
-        <form>
-            <label for="name">Name:</label><br>
-            <input type="text" id="name" placeholder="name"><br>
-            <label for="email">Email:</label><br>
-            <input type="email" id="email" placeholder="email"><br>
-            <label for="message">Message:</label><Br>
-            <textarea id="message" placeholder="message"></textarea><br>
-            <button type="submit">send</button>
 
-        </form>
+            <h2>Contact Information</h2>
+
+            <form action="#" method="post">
+
+                <div>
+                    <label for="name">Name:</label>
+                    <input
+                        type="text"
+                        id="name"
+                        name="name"
+                        placeholder="Enter your name"
+                        required>
+                </div>
+
+                <div>
+                    <label for="email">Email:</label>
+                    <input
+                        type="email"
+                        id="email"
+                        name="email"
+                        placeholder="Enter your email"
+                        required>
+                </div>
+
+                <div>
+                    <label for="message">Message:</label>
+                    <textarea
+                        id="message"
+                        name="message"
+                        placeholder="Enter your message"
+                        rows="5"
+                        required></textarea>
+                </div>
+
+                <button type="submit">Send</button>
+
+            </form>
+
         </div>
-   
-        <h2>Find Me On</h2>
-        <a href="https://www.instagram.com" target="_blank">
-            <img src="images/insta.jpg" alt="website" width="100" height="100">
-        </a>
-        <a href="https://www.whatsapp.com" target="_blank">
-            <img src="images/whatsapp.jpg" alt="website" width="100" height="100">
-        </a>
-        <a href="https://facebook.com/" target="_blank">
-            <img src="images/facebook.jpg" alt="website" width="100" height="100">
-        </a>
-    </div>
-    </section>
-         <footer>
-        &copy; copyright &copy; 2024 Samyat Rajthala. All rights reserved.
-    </footer>
 
-</body>
 
-</html>
+        <!-- Social Media -->
+        <div class="social-container"
+```
